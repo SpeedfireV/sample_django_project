@@ -1,0 +1,8 @@
+Lista:
+
+{% for i in contact_form %}
+    - {{ i.nickname }}
+     {{ i.created }}
+{% empty %}
+    Lista jest pusta.
+{% endfor %}

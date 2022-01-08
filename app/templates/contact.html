@@ -1,0 +1,24 @@
+Hello world 2:
+<br/><br/>
+
+
+{% if success %}
+
+Dziękujemy za wpisanie
+
+{% else %}
+
+
+<form method="post">
+    {% csrf_token %}
+
+    Podaj nick <br/>
+    <input name="nickname"/> <br/><br/>
+    Podaj wiadomość <br/>
+    <input name="message"/>
+
+    <input type="submit">
+
+</form>
+
+{% endif %}
